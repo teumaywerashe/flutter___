@@ -21,25 +21,15 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("data"), actions: [Icon(Icons.abc_outlined)]),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("data", style: TextStyle(color: Colors.red)),
-            TextButton(onPressed: () {}, child: Text("data")),
-            
-            Row(
-              
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-            
-              children: [
-                Icon(Icons.add),
-                Icon(Icons.plus_one) 
-              ],
-            )
-          ],
-        ),
+      child: Card(
+        color: Colors.red,
+        child:Padding(
+          padding: EdgeInsetsGeometry.all(10.0),
+         child:  Text("hello card elements"),
+      
+        )
+       
+      ),
       ),
     );
   }
