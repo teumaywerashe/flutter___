@@ -23,11 +23,10 @@ class MyHomePage extends StatelessWidget {
       body: Center(
       child: Card(
         color: Colors.red,
-        child:Padding(
-          padding: EdgeInsetsGeometry.all(10.0),
+       
          child:  Text("hello card elements"),
       
-        )
+      
        
       ),
       ),
